@@ -1,0 +1,22 @@
+<h1 class="text-center none-margin-top-bottom">Films</h1>
+
+<div class="container">
+        <table class="table table-bordered table-striped text-center table-background opacity">
+	<tr>
+		<th class="text-center">Title</th>
+		<th class="text-center">Director</th>
+		<th class="text-center">Year</th>
+	</tr>
+	<% @films.each do |f| %>
+	<tr>
+		<td><%= f.title %></td>
+		<td><%= f.director %></td>
+		<td><%= f.year %></td>
+		<td>
+			<%= link_to "", f, class: "btn btn-xs btn-info btn-circle btn-outline glyphicon glyphicon-eye-open" %>
+		</td>
+	</tr>
+	<% end %>
+	</table>
+  <%= link_to "", new_film_url ,class: "glyphicon glyphicon-plus" %>
+</div>

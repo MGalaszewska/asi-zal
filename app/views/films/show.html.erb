@@ -1,0 +1,38 @@
+<div class="container">
+  <table class="table table-bordered table-striped">
+     <tr>
+       <td>
+         <small>Title</small>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <%= @film.title %>
+       </td>
+     </tr>
+
+     <tr>
+       <td>
+         <small>Director</small>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <%= @film.director %>
+       </td>
+     </tr>
+     <td>
+       <small>Year</small>
+     </td>
+   </tr>
+   <tr>
+     <td>
+       <%= @film.year %>
+     </td>
+   </tr>
+   </table>
+   <div class="form-group">
+       <%= link_to "", films_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
+   </div>
+</div>
+</div>

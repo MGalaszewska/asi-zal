@@ -1,0 +1,33 @@
+<h1 class="text-center none-margin-top-bottom">Add new corpse</h1>
+
+<div class="container">
+	<%= form_for :film do |f| %>
+		<div class="form-group">
+			<%= f.label :title, class: "col-sm-2 control-label" %>
+			<div class="col-sm-10">
+				<%= f.text_field :title, class: "form-control opacity" %>
+				</br>
+			</div>
+		</div>
+		<div class="form-group">
+			<%= f.label :director, class: "col-sm-2 control-label" %>
+			<div class="col-sm-10">
+				<%= f.text_field :director, class: "form-control opacity" %>
+				</br>
+			</div>
+		</div>
+		<div class="form-group">
+			<%= f.label :year, class: "col-sm-2 control-label" %>
+			<div class="col-sm-10">
+				<%= f.text_field :year, class: "form-control opacity" %>
+				</br>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="text-center">
+				<button type="submit" class="btn btn-success btn-circle btn-outline glyphicon glyphicon-ok"></button>
+				<%= link_to "", films_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
+			</div>
+		</div>
+	<% end %>
+</div>
