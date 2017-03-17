@@ -14,6 +14,8 @@
 		<td><%= f.year %></td>
 		<td>
 			<%= link_to "", f, class: "btn btn-xs btn-info btn-circle btn-outline glyphicon glyphicon-eye-open" %>
+      <%= link_to "", edit_film_path(f), class: "btn btn-xs btn-primary btn-circle btn-outline glyphicon glyphicon-pencil" %>
+			<%= link_to "", f, :data => {:confirm => "Are you sure?"}, :method => :delete, class: "btn btn-xs btn-danger btn-circle btn-outline glyphicon glyphicon-remove" %>
 		</td>
 	</tr>
 	<% end %>

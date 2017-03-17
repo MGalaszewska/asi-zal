@@ -1,7 +1,7 @@
 <h1 class="text-center none-margin-top-bottom">Add new corpse</h1>
 
 <div class="container">
-	<%= form_for :film do |f| %>
+	<%= form_for :film, url: films_path do |f| %>
 		<div class="form-group">
 			<%= f.label :title, class: "col-sm-2 control-label" %>
 			<div class="col-sm-10">
