@@ -46,6 +46,8 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 ## server s3
 gem 'aws-sdk', '~> 2.3'
+# dane
+gem 'faker', '~> 1.7.3'
 
 group :development do
   gem 'sqlite3'
