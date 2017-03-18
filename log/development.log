@@ -4174,3 +4174,20 @@ Processing by FilmsController#index as HTML
 Completed 200 OK in 252ms (Views: 239.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/films" for ::1 at 2017-03-18 13:24:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 801ms (Views: 771.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:24:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 374ms (Views: 359.1ms | ActiveRecord: 1.0ms)
+
+
