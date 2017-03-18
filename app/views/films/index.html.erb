@@ -10,9 +10,14 @@
       <div class="caption">
         <h3 class="text-center"><%= f.title %></h3>
         <p class="text-center"><%= f.director %> <%= f.year %></p>
-          <p class="text-center"><%= link_to "", f, class: "btn btn-xs btn-info btn-circle btn-outline glyphicon glyphicon-eye-open" %>
+          <p class="text-center">
+            <%= link_to "", f, class: "btn btn-xs btn-info btn-circle btn-outline glyphicon glyphicon-eye-open" %>
               <%= link_to "", edit_film_path(f), class: "btn btn-xs btn-primary btn-circle btn-outline glyphicon glyphicon-pencil" %>
-        			<%= link_to "", f, :method => :delete, class: "btn btn-xs btn-danger btn-circle btn-outline glyphicon glyphicon-remove" %></p>
+              <%= link_to '', film_path(f),
+              method: :delete,
+              data: { confirm: 'Are you sure?' },
+              class: "btn btn-xs btn-danger btn-circle btn-outline glyphicon glyphicon-remove" %>
+            </p>
             </div>
     </div>
   </div>

@@ -2723,3 +2723,1454 @@ Processing by FilmsController#index as HTML
 Completed 200 OK in 52ms (Views: 39.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/films" for ::1 at 2017-03-18 11:40:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 103ms (Views: 70.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/1/edit" for ::1 at 2017-03-18 11:42:33 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 91ms (Views: 62.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/1/edit" for ::1 at 2017-03-18 11:42:45 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:42:51 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 11:43:01 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 38.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:43:27 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:48:51 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:48:52 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 42.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:48:54 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:49:31 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/asi-zal/app/views/films/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+..._to "", film_path(f) , :method: :delete, class: "btn btn-xs ...
+...                               ^):
+  
+app/views/films/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+Started GET "/films/4" for ::1 at 2017-03-18 11:49:33 +0100
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+Processing by FilmsController#show as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1124.1ms)
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 350ms (Views: 334.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:49:35 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 397ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/asi-zal/app/views/films/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+..._to "", film_path(f) , :method: :delete, class: "btn btn-xs ...
+...                               ^):
+  
+app/views/films/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1025.1ms)
+Started GET "/films" for ::1 at 2017-03-18 11:50:05 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/asi-zal/app/views/films/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+..._to "", film_path(f) , :method: :delete, class: "btn btn-xs ...
+...                               ^):
+  
+app/views/films/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1069.1ms)
+Started GET "/films" for ::1 at 2017-03-18 11:50:44 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:50:45 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 64ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:51:10 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:51:11 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:51:12 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:54:21 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 62ms (Views: 44.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:54:22 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (3.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 39.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:54:25 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:55:07 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 62ms (Views: 43.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/films/4/edit" for ::1 at 2017-03-18 11:55:08 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/4" for ::1 at 2017-03-18 11:55:10 +0100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mdv6KyK1cYVP0mvrYkUO1ZerA/2HomRc6zp7WX3SJeQB6BvbDfTGqGOshlnQmi5b3wEtJFUfeowKcVkoHYALQQ==", "film"=>{"title"=>"asdas", "director"=>"asd", "year"=>"24234ss"}, "commit"=>"Save Film", "id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "films" SET "year" = ?, "updated_at" = ? WHERE "films"."id" = ?[0m  [["year", "24234ss"], ["updated_at", 2017-03-18 10:55:10 UTC], ["id", 4]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/4
+Completed 302 Found in 12ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:55:10 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:55:11 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:55:12 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:57:11 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:57:12 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:57:13 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:57:18 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 68ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 11:57:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 11:57:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:57:20 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:58:08 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 65ms (Views: 45.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:58:09 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 91ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:58:22 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 62ms (Views: 43.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:58:25 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 84ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:58:27 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:58:39 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 11:59:13 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 11:59:15 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 66ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:00:34 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 61ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:35 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:36 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:37 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:38 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:38 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 37.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:39 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 58ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:46 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 41.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:47 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:00:48 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:01:01 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:01:02 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:01:04 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 12:03:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:03:37 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 61ms (Views: 43.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:03:38 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:05:07 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:05:09 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 85ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:05:26 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:05:27 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 38.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 12:05:30 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 61ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 12:05:33 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dc3Y+x+fpgK6cCvxRxd7J4hE0U8vPbW9w5YqbmpYNyfequq1trUfxyhDBGH3k1ERF/BdDx66CLuJUsWPZiETIg==", "film"=>{"title"=>"asd", "director"=>"asdas", "year"=>"23234"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "asd"], ["director", "asdas"], ["year", "23234"], ["created_at", 2017-03-18 11:05:33 UTC], ["updated_at", 2017-03-18 11:05:33 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/5
+Completed 302 Found in 10ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/films/5" for ::1 at 2017-03-18 12:05:33 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:05:34 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 43.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:06:23 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/1" for ::1 at 2017-03-18 12:06:24 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:06:27 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:09:12 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/3" for ::1 at 2017-03-18 12:09:13 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:09:14 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 45.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:12:16 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 62ms (Views: 43.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/films/1" for ::1 at 2017-03-18 12:12:17 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     7:      </tr>
+     8:      <tr>
+     9:        <td>
+    10:          <%= @film.title %>
+    11:        </td>
+    12:      </tr>
+    13: 
+  
+app/views/films/show.html.erb:10:in `_app_views_films_show_html_erb__553582025_43567188'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1063.1ms)
+Started GET "/films/1" for ::1 at 2017-03-18 12:14:10 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 39.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:14:11 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 57ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 12:14:13 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 53ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2017-03-18 12:14:17 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:14:47 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:18:40 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1456ms (Views: 1442.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/films/3" for ::1 at 2017-03-18 12:18:44 +0100
+Processing by FilmsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"piMHXqlXPoYMUALt/u1HqN66XIjFNZ2KwZO/2M1MSBRe1lEAnS1AYvcsPkRZ6rf1GsiN+2Em5Y2Gv27N1cLzOw==", "id"=>"3"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "films" WHERE "films"."id" = ?[0m  [["id", 3]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films
+Completed 302 Found in 11ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:18:44 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 236ms (Views: 222.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:19:17 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/asi-zal/app/views/films/index.html.erb:19: syntax error, unexpected ':'
+              class: "btn btn-xs btn-primary btn-...
+                    ^):
+  
+app/views/films/index.html.erb:19: syntax error, unexpected ':'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1053.1ms)
+Started GET "/films" for ::1 at 2017-03-18 12:19:29 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Sites/asi-zal/app/views/films/index.html.erb:19: syntax error, unexpected ':'
+              class: "btn btn-xs btn-primary btn-...
+                    ^):
+  
+app/views/films/index.html.erb:19: syntax error, unexpected ':'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1076.1ms)
+Started GET "/films" for ::1 at 2017-03-18 12:19:43 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 257ms (Views: 242.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:21:46 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 269ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/films/5" for ::1 at 2017-03-18 12:21:50 +0100
+Processing by FilmsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/hqk1x3YPrVH/dWJopTbIQzTSmOqMSLJcWhEP+ZZwWoG7/KJKaJAUbyB6SAFkyt8yKGbEA4iWs42RJUq/td6RQ==", "id"=>"5"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "films" WHERE "films"."id" = ?[0m  [["id", 5]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films
+Completed 302 Found in 7ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:21:50 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 230ms (Views: 216.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:25:02 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 243ms (Views: 229.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/films/4" for ::1 at 2017-03-18 12:25:06 +0100
+Processing by FilmsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AZKtUaU064aLMPzcDEneclhkALSiYGqQDrPh+3pldO35Z/sPkU6VYnBMwHWrTi4vnBbRxwZzEpdJnzDuYuvPwg==", "id"=>"4"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "films" WHERE "films"."id" = ?[0m  [["id", 4]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films
+Completed 302 Found in 11ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:25:06 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 255ms (Views: 241.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 12:41:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 269ms (Views: 255.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 12:41:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 237ms (Views: 223.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 12:41:42 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 226ms (Views: 214.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:41:43 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 228ms (Views: 213.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 12:41:48 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 230ms (Views: 217.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:41:52 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 229ms (Views: 216.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 12:41:54 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 235ms (Views: 222.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 12:41:57 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ia7rmK3lOCr24q/Shm/xH02YZVtvH8qQsqcwpMwmdswiydnWBM+B72TRgEI269sp0izpG16Yd5b4Y99FwF9SyQ==", "film"=>{"title"=>"asdas", "director"=>"asdasd", "year"=>"234234"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "asdas"], ["director", "asdasd"], ["year", "234234"], ["created_at", 2017-03-18 11:41:57 UTC], ["updated_at", 2017-03-18 11:41:57 UTC]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/6
+Completed 302 Found in 7ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/films/6" for ::1 at 2017-03-18 12:41:57 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 261ms (Views: 247.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:41:59 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 245ms (Views: 231.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:45:06 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 265ms (Views: 243.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 12:58:16 +0100
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x9cee398>):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1042.1ms)
+Started GET "/films" for ::1 at 2017-03-18 12:59:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1051.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20170318115211)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170318115211"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/films" for ::1 at 2017-03-18 13:00:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 780ms (Views: 749.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:00:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 384ms (Views: 373.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:00:21 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 330ms (Views: 329.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:02:06 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 331ms (Views: 330.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:02:08 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 338ms (Views: 336.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:02:09 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 336ms (Views: 335.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:02:12 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 329ms (Views: 328.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:02:13 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 335ms (Views: 333.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 13:02:17 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 248ms (Views: 234.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:02:17 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 254ms (Views: 238.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 13:02:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 246ms (Views: 232.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:02:19 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 256ms (Views: 242.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:02:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 325ms (Views: 324.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:03:04 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 339ms (Views: 337.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:03:05 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 336ms (Views: 335.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:03:07 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 335ms (Views: 333.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:03:24 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 342ms (Views: 341.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:03:36 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 339ms (Views: 338.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:04:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1425.1ms)
+Started GET "/" for ::1 at 2017-03-18 13:04:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 747ms (Views: 733.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:04:55 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 267ms (Views: 252.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for ::1 at 2017-03-18 13:04:56 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 366ms (Views: 355.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/register/cmon_let_me_in" for ::1 at 2017-03-18 13:04:58 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 331ms (Views: 329.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for ::1 at 2017-03-18 13:05:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 335ms (Views: 333.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/register/cmon_let_me_in" for ::1 at 2017-03-18 13:05:01 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 329ms (Views: 327.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for ::1 at 2017-03-18 13:05:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 331ms (Views: 329.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/register/cmon_let_me_in" for ::1 at 2017-03-18 13:05:04 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 337ms (Views: 336.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for ::1 at 2017-03-18 13:05:05 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 325ms (Views: 324.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for ::1 at 2017-03-18 13:05:06 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 337ms (Views: 336.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/login" for ::1 at 2017-03-18 13:06:40 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/auth/login"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1387.1ms)
+Started GET "/" for ::1 at 2017-03-18 13:07:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 786ms (Views: 759.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:07:41 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 369ms (Views: 350.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:08:49 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 329ms (Views: 319.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 13:08:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 251ms (Views: 238.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:08:53 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 321ms (Views: 301.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:08:54 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 286ms (Views: 285.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:08:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 281ms (Views: 281.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:08:58 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 287ms (Views: 286.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-18 13:09:36 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 310ms (Views: 309.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:09:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 300ms (Views: 299.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-03-18 13:09:40 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 321ms (Views: 304.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 13:09:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 256ms (Views: 243.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:09:45 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 252ms (Views: 239.7ms | ActiveRecord: 0.0ms)
+
+

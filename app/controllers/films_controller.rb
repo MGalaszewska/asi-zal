@@ -16,6 +16,13 @@ class FilmsController < ApplicationController
     @film = Film.find(params[:id])
   end
 
+  def destroy
+    @film = Film.find(params[:id])
+    @film.destroy
+
+    redirect_to films_path
+  end
+
   def create
   @film = Film.new(film_params)
 
@@ -36,12 +43,6 @@ class FilmsController < ApplicationController
   end
 end
 
-def destroy
-  @film = Film.find(params[:id])
-  @film.destroy
-
-  redirect_to films_path
-end
 
   private
   def film_params

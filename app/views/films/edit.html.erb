@@ -1,5 +1,6 @@
 
-<h1>Editing film</h1>
+<div class="container">
+  <h1>Editing film</h1>
 
 <%= form_for :film, url: film_path(@film), method: :patch do |f| %>
 
@@ -39,3 +40,4 @@
 <% end %>
 
 <%= link_to 'Back', films_path %>
+</div>
