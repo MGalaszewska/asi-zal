@@ -9,18 +9,30 @@ class FilmsController < ApplicationController
  end
 
   def new
+    if user_signed_in?
      @film = Film.new
+   else
+    redirect_to new_user_session_path, :notice => "Please log-in"
+    end
   end
 
   def edit
+     if user_signed_in?
     @film = Film.find(params[:id])
+  else
+  redirect_to new_user_session_path, :notice => "Please log-in"
+end
   end
 
   def destroy
+     if user_signed_in?
     @film = Film.find(params[:id])
     @film.destroy
 
     redirect_to films_path
+    else
+    redirect_to new_user_session_path, :notice => "Please log-in"
+    end
   end
 
   def create

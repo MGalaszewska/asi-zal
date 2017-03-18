@@ -44,7 +44,8 @@ gem "paperclip", "~> 5.0.0"
 # paginacja
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
-
+## server s3
+gem 'aws-sdk', '~> 2.3'
 
 group :development do
   gem 'sqlite3'
