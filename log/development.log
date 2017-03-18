@@ -4191,3 +4191,1063 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 374ms (Views: 359.1ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for ::1 at 2017-03-18 13:47:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1076.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentPosterToFilms (20170318124258)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentPosterToFilms < ActiveRecord::Migration[4.2] (called from require at bin/rails:4)
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "films" ADD "poster_file_name" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "films" ADD "poster_content_type" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "films" ADD "poster_file_size" integer[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "films" ADD "poster_updated_at" datetime[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170318124258"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for ::1 at 2017-03-18 13:48:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 752ms (Views: 725.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 13:48:17 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 294ms (Views: 279.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:48:17 +0100
+Processing by FilmsController#index as HTML
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `before_avatar_post_process' for #<Class:0xa8c1668>
+Did you mean?  before_post_process
+               before_poster_post_process):
+  
+app/models/film.rb:3:in `<class:Film>'
+app/models/film.rb:1:in `<top (required)>'
+app/controllers/films_controller.rb:4:in `index'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1076.1ms)
+Started GET "/films" for ::1 at 2017-03-18 13:48:57 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `poster' for nil:NilClass):
+     6:   <% @films.each do |f| %>
+     7:   <div class="col-sm-6 col-md-4">
+     8:     <div class="thumbnail">
+     9:       <%= image_tag @f.poster.url(:medium) %>
+    10:       <div class="caption">
+    11:         <h3 class="text-center"><%= f.title %></h3>
+    12:         <p class="text-center"><%= f.director %> <%= f.year %></p>
+  
+app/views/films/index.html.erb:9:in `block in _app_views_films_index_html_erb___59217626_101358648'
+app/views/films/index.html.erb:6:in `_app_views_films_index_html_erb___59217626_101358648'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1053.1ms)
+Started GET "/films" for ::1 at 2017-03-18 13:51:27 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 263ms (Views: 249.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 13:51:47 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (129.0ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0xc153330>:0xcd389c0>
+Did you mean?  format
+               formats
+               form_tag
+               formats=
+               form_for
+               fork):
+    4: 	<%= form_for :film, url: films_path, html: { multipart: true } do |f| %>
+    5: 	<div class="form-group">
+    6: 		<%= f.label :poster, class: "col-sm-2 control-label" %>
+    7: 		<%= form.file_field :poster %>
+    8: 	</div>
+    9: 		<div class="form-group">
+   10: 			<%= f.label :title, class: "col-sm-2 control-label" %>
+  
+app/views/films/new.html.erb:7:in `block in _app_views_films_new_html_erb___767918622_107595744'
+app/views/films/new.html.erb:4:in `_app_views_films_new_html_erb___767918622_107595744'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1058.1ms)
+Started GET "/films/new" for ::1 at 2017-03-18 13:54:50 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 283ms (Views: 268.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 13:55:13 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VM7Dw8GqYrsn6BNkVCeD97RAXc/IieSUwXmjJkW3nZWsO5Wd9dAcX9yUL83zIHOqcDKMvGyanJOGVXIzXTkmug==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0x9128a18 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-6472-ns4f1i.jpg>, @original_filename="student-300x300 (1).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"student-300x300 (1).jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asdas", "director"=>"asdassd", "year"=>"23234"}}
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/e3692492fc0ff6effb6ff34ce8fa24a120170318-6472-10bmpx8.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/bb1e96224f42f09dcd37ce10000ffe5220170318-6472-487dij.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/bb1e96224f42f09dcd37ce10000ffe5220170318-6472-487dij.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/e3692492fc0ff6effb6ff34ce8fa24a120170318-6472-1kzmgnm.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 612ms (Views: 239.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 13:55:19 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"moeh8TFoj6LIHqN/yMXpnxCKIoeGyfgXbOmULNJMBTticvevBRLxRjNin9ZvwhnC1Pjz9CLagBArxUU5ysK+FA==", "film"=>{"title"=>"asdas", "director"=>"asdassd", "year"=>"23234"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "asdas"], ["director", "asdassd"], ["year", "23234"], ["created_at", 2017-03-18 12:55:19 UTC], ["updated_at", 2017-03-18 12:55:19 UTC]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/7
+Completed 302 Found in 8ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/films/7" for ::1 at 2017-03-18 13:55:19 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 269ms (Views: 251.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:55:22 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 276ms (Views: 259.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 13:55:31 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 256ms (Views: 242.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 13:56:05 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 272ms (Views: 258.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 13:56:14 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"76Qi7yZLKMC2aLGEYeaydwQnegfBQH9sMCh7uxzr1xoXUXSxEjFWJE0UjS3G4UIqwFWrdGVTB2t3BKquBGVsNQ==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xa943748 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-6472-k3lywl.jpg>, @original_filename="student-guide-4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"student-guide-4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asdads", "director"=>"asads", "year"=>"23324"}}
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-weufa9.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-xu7z0n.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-xu7z0n.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-1nrnumw.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 337ms (Views: 250.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:56:24 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 259ms (Views: 246.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 13:56:26 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 248ms (Views: 234.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 13:56:40 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6BpmxuItH2FT1OaGgFUzpYssJF9Ql8GgMrxAZHugSexDfVSISwempMHnyRYw0RmTFJioH2EQfKZ4eK+Fd9lt6Q==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xa738698 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-6472-27w9q0.jpg>, @original_filename="Student-300x300.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"Student-300x300.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asdas", "director"=>"asdas", "year"=>"23423"}}
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-i1z19v.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-1btrmez.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-1btrmez.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-proh7g.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 344ms (Views: 242.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 13:56:42 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BbECUvoRlVAB6KB1wK8g4goE0oASbjnwihQBTyNNxQb9RFQMzmvrtPqUnNxnqNC/znYD87Z9QffNONBaO8N+KQ==", "film"=>{"title"=>"asdas", "director"=>"asdas", "year"=>"23423"}}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "asdas"], ["director", "asdas"], ["year", "23423"], ["created_at", 2017-03-18 12:56:42 UTC], ["updated_at", 2017-03-18 12:56:42 UTC]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/8
+Completed 302 Found in 10ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/films/8" for ::1 at 2017-03-18 13:56:42 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 254ms (Views: 239.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:56:44 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 244ms (Views: 232.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/8" for ::1 at 2017-03-18 13:58:57 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 255ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 13:59:03 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 248ms (Views: 235.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-18 13:59:07 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 314ms (Views: 301.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/1/edit" for ::1 at 2017-03-18 13:59:25 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (117.0ms)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0xc153330>:0xcadea58>
+Did you mean?  format
+               formats
+               form_tag
+               formats=
+               form_for
+               fork):
+    20: 
+    21:   <p>
+    22:     <%= f.label :poster %><br>
+    23: 		<%= form.file_field :poster %>
+    24:   </p>
+    25: 
+    26:   <p>
+  
+app/views/films/edit.html.erb:23:in `block in _app_views_films_edit_html_erb___954622546_106362960'
+app/views/films/edit.html.erb:5:in `_app_views_films_edit_html_erb___954622546_106362960'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1033.1ms)
+Started GET "/films/1/edit" for ::1 at 2017-03-18 13:59:45 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 267ms (Views: 252.4ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/1" for ::1 at 2017-03-18 13:59:50 +0100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h/EbQ+xPw+PcZR+6/qd3nI9e31JeUE+pbjiU3Oi7glF/BE0d2DW9BycZIxNZoIfBSywOIfpDN64pFEXJ8DU5fg==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0x67c91e8 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-6472-1dbpsdb.jpg>, @original_filename="Student-300x300.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"Student-300x300.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asd", "director"=>"asdas", "year"=>"12312"}, "commit"=>"Save Film", "id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-6b08rl.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-hsfipu.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-hsfipu.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/223e1464e68974ec5e93119b397f5e9220170318-6472-nk1n9f.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 346ms (Views: 251.5ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/1" for ::1 at 2017-03-18 14:00:14 +0100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swH4HReuR5kjrHiFf7lcdU02WxZ4TkpQPQa2yvSepTdL9K5DI9Q5fdjQRCzYvqwoiUSKZdxdMld6Kmff7BAeGA==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xda6cc40 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-6472-171iw2l.jpg>, @original_filename="student-guide-4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"student-guide-4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asd", "director"=>"asdas", "year"=>"12312"}, "commit"=>"Save Film", "id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-iminln.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-10vy9mo.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-10vy9mo.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-6472-181zgk5.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 350ms (Views: 257.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/1" for ::1 at 2017-03-18 14:00:16 +0100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZDU4ScvBqB2MTYvbD4DTiHcWjGKM9krnJevfL0vcBUJZYK/E1V4RI1NCobLOfMT5a6LQi4goSzbu35ppaHLOg==", "film"=>{"title"=>"asd", "director"=>"asdas", "year"=>"12312"}, "commit"=>"Save Film", "id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/films/1" for ::1 at 2017-03-18 14:00:17 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 261ms (Views: 247.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:00:18 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 249ms (Views: 234.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/1/edit" for ::1 at 2017-03-18 14:00:20 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 252ms (Views: 238.6ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/1" for ::1 at 2017-03-18 14:00:25 +0100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o3ymOkKEE0ZCujgxSU+tXJayE8RPKm91H5vLEp8tQ3A/LHMAXX04+tIyt7lMrVmS9YS7Rj34SRW1Pp9tKbJZg==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xc33dad0 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-6472-1dqr15u.jpg>, @original_filename="16443903_1135603163203743_2081800287_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"16443903_1135603163203743_2081800287_o.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asd", "director"=>"asdas", "year"=>"12312"}, "commit"=>"Save Film", "id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/97cc5d6ed3330ed5d17fa5e578d97ad720170318-6472-dm4asb.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/97cc5d6ed3330ed5d17fa5e578d97ad720170318-6472-1d72wcn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/97cc5d6ed3330ed5d17fa5e578d97ad720170318-6472-1d72wcn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/97cc5d6ed3330ed5d17fa5e578d97ad720170318-6472-eae328.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 346ms (Views: 254.1ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/1" for ::1 at 2017-03-18 14:03:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SvwcNV5uSgnaD6YDAUTlGaWUinYkkNbCpEjIv0fMBlqyCUprahQ07SFzmqqmQxVEYeZbBYCDrsXjZBmqX0K9dQ==", "film"=>{"title"=>"asd", "director"=>"asdas", "year"=>"12312"}, "commit"=>"Save Film", "id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/1
+Completed 302 Found in 35ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/films/1" for ::1 at 2017-03-18 14:03:35 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 724ms (Views: 709.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:03:37 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 284ms (Views: 271.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/8/edit" for ::1 at 2017-03-18 14:03:40 +0100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 306ms (Views: 290.3ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/films/8" for ::1 at 2017-03-18 14:03:46 +0100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZI1+x5uPbfxDcdNrmfsMbxZA5zd/Xm4hQuK3abHIv+eFqWNJlcTRsIogB/vVte9BfwI5F/c43fkobxtpzv6J/A==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xb77ed38 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-8336-1q1o2on.jpg>, @original_filename="Studenci-82-300x300.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"Studenci-82-300x300.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asdas", "director"=>"asdas", "year"=>"23423"}, "commit"=>"Save Film", "id"=>"8"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=/usr/local/bin/;%PATH% & file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/1dbd49bee57686eff31d46d2da7ed01620170318-8336-tx6stl.jpg"
+Command :: SET PATH=/usr/local/bin/;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/1dbd49bee57686eff31d46d2da7ed01620170318-8336-zvo886.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=/usr/local/bin/;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/1dbd49bee57686eff31d46d2da7ed01620170318-8336-zvo886.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=/usr/local/bin/;%PATH% & file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/1dbd49bee57686eff31d46d2da7ed01620170318-8336-b0w1wa.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 408ms (Views: 240.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:03:59 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 244ms (Views: 230.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 14:04:02 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 243ms (Views: 230.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 14:04:11 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WCPJW8/pns1S4BBJz4dUhHbVIkYn69jVrvctELAphbfzRPsVZsMnCMDTP9l/A36y6WGuBhZsZdPkM8LxvFChsg==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0x9c028f8 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-8336-1251b5e.jpg>, @original_filename="student-300x300 (1).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"student-300x300 (1).jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asdas", "director"=>"asdas", "year"=>"23234"}}
+Command :: SET PATH=/usr/local/bin/;%PATH% & file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/e3692492fc0ff6effb6ff34ce8fa24a120170318-8336-1nb5neh.jpg"
+Command :: SET PATH=/usr/local/bin/;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/bb1e96224f42f09dcd37ce10000ffe5220170318-8336-tpcce4.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=/usr/local/bin/;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/MICHAL~1/AppData/Local/Temp/bb1e96224f42f09dcd37ce10000ffe5220170318-8336-tpcce4.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=/usr/local/bin/;%PATH% & file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/e3692492fc0ff6effb6ff34ce8fa24a120170318-8336-h61zr6.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 375ms (Views: 249.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 14:10:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 795ms (Views: 767.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 14:10:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 247ms (Views: 234.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:10:23 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 262ms (Views: 244.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 14:10:27 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 277ms (Views: 263.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 14:11:52 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GT1NsZ2s5TSObYCWfjjJ/b5yPLcOkrOnsS+uDpsFcZKyWn//NIZc8RxerwbOvOPLIcaw9z8VDqH760Hvl3xVlw==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0x5097d20 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-796-pp6cx1.jpg>, @original_filename="256'.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"256'.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"ddddd", "director"=>"ddddddd", "year"=>"ddddddd"}}
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/41065369b352ccfbf81d78cbda1e5f3620170318-796-5joebk.jpg"
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/41065369b352ccfbf81d78cbda1e5f3620170318-796-sdatpp.jpg"
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at", "poster_file_name", "poster_content_type", "poster_file_size", "poster_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "ddddd"], ["director", "ddddddd"], ["year", "ddddddd"], ["created_at", 2017-03-18 13:11:52 UTC], ["updated_at", 2017-03-18 13:11:52 UTC], ["poster_file_name", "256'.jpg"], ["poster_content_type", "image/jpeg"], ["poster_file_size", 26061], ["poster_updated_at", 2017-03-18 13:11:52 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/9
+Completed 302 Found in 74ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/films/9" for ::1 at 2017-03-18 14:11:52 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 268ms (Views: 251.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/system/films/posters/000/000/009/thumb/256'.jpg?1489842712" for ::1 at 2017-03-18 14:11:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/system/films/posters/000/000/009/thumb/256'.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1375.1ms)
+Started GET "/system/films/posters/000/000/009/thumb/256'.jpg?1489842712" for ::1 at 2017-03-18 14:12:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/system/films/posters/000/000/009/thumb/256'.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1392.1ms)
+Started GET "/" for ::1 at 2017-03-18 14:12:07 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 278ms (Views: 256.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/system/films/posters/000/000/009/thumb/256'.jpg?1489842712" for ::1 at 2017-03-18 14:12:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/system/films/posters/000/000/009/thumb/256'.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+Started GET "/" for ::1 at 2017-03-18 14:12:08 +0100
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (4.0ms)
+Processing by WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1499.1ms)
+Completed 200 OK in 3113ms (Views: 3098.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 14:12:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 244ms (Views: 231.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-18 14:12:23 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 243ms (Views: 231.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:12:23 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 250ms (Views: 237.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/system/films/posters/000/000/009/medium/256'.jpg?1489842712" for ::1 at 2017-03-18 14:12:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/system/films/posters/000/000/009/medium/256'.jpg"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1371.1ms)
+Started GET "/films" for ::1 at 2017-03-18 14:13:37 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 270ms (Views: 256.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:13:39 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 262ms (Views: 248.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 14:13:42 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 256ms (Views: 238.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 14:13:50 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tTD8cR8P6iAaAEzqra/bjLTGcj0n7B4ZCulUHxNeaqEeV84/tiVT5YgzY3odK/G6K3L+fRZrox9ALbv+HydOpA==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xc773a00 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-796-9ftoup.jpg>, @original_filename="student-300x300 (1).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"student-300x300 (1).jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"asdas", "director"=>"asdas", "year"=>"asdas"}}
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/e3692492fc0ff6effb6ff34ce8fa24a120170318-796-1l3ys3u.jpg"
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/e3692492fc0ff6effb6ff34ce8fa24a120170318-796-8fxikb.jpg"
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at", "poster_file_name", "poster_content_type", "poster_file_size", "poster_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "asdas"], ["director", "asdas"], ["year", "asdas"], ["created_at", 2017-03-18 13:13:50 UTC], ["updated_at", 2017-03-18 13:13:50 UTC], ["poster_file_name", "student-300x300_(1).jpg"], ["poster_content_type", "image/jpeg"], ["poster_file_size", 18172], ["poster_updated_at", 2017-03-18 13:13:50 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/10
+Completed 302 Found in 60ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/films/10" for ::1 at 2017-03-18 14:13:50 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 258ms (Views: 245.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:13:52 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 255ms (Views: 240.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:16:18 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 7905ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "     width="256"": expected "{", was ";"):
+    4:     <title>Bootswatch: Superhero</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7: <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8: <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.css" media="screen">
+   10:     <link rel="stylesheet" href="https://bootswatch.com/assets/css/custom.min.css">
+  
+app/assets/stylesheets/films.scss:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___202118824_97621572'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1038.1ms)
+Started GET "/films" for ::1 at 2017-03-18 14:17:35 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8211ms (Views: 8193.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:20:43 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 7815ms (Views: 7802.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:24:21 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 258ms (Views: 244.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:24:44 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 255ms (Views: 242.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:24:52 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 283ms (Views: 264.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:31:01 +0100
+Processing by FilmsController#index as HTML
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" ORDER BY created_at DESC[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `page' for #<Film::ActiveRecord_Relation:0xf3c6a50>):
+  
+app/controllers/films_controller.rb:4:in `index'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1052.1ms)
+Started GET "/films" for ::1 at 2017-03-18 14:31:20 +0100
+Processing by FilmsController#index as HTML
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" ORDER BY created_at DESC[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `page' for #<Film::ActiveRecord_Relation:0x1103d4f8>):
+  
+app/controllers/films_controller.rb:4:in `index'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1056.1ms)
+Started GET "/films" for ::1 at 2017-03-18 14:31:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 1563ms (Views: 1531.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/new" for ::1 at 2017-03-18 14:31:55 +0100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 320ms (Views: 306.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for ::1 at 2017-03-18 14:32:05 +0100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RYE+yCngVwy2hOTVkkG7fWTSGQkiAQV8wMkFAmRuh2bu5gyGgMruySS3y0UixZFL+2aVSROGuHqKDerjaBejYw==", "film"=>{"poster"=>#<ActionDispatch::Http::UploadedFile:0xb18f148 @tempfile=#<Tempfile:C:/Users/MICHAL~1/AppData/Local/Temp/RackMultipart20170318-8884-1ltrzeq.jpg>, @original_filename="student-guide-4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"film[poster]\"; filename=\"student-guide-4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"aasd", "director"=>"asda", "year"=>"2423"}}
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-8884-e9fv0u.jpg"
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/MICHAL~1/AppData/Local/Temp/65de3eb53eafb61abb8962ec447e0c4820170318-8884-1yhplds.jpg"
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "films" ("title", "director", "year", "created_at", "updated_at", "poster_file_name", "poster_content_type", "poster_file_size", "poster_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aasd"], ["director", "asda"], ["year", "2423"], ["created_at", 2017-03-18 13:32:06 UTC], ["updated_at", 2017-03-18 13:32:06 UTC], ["poster_file_name", "student-guide-4.jpg"], ["poster_content_type", "image/jpeg"], ["poster_file_size", 23366], ["poster_updated_at", 2017-03-18 13:32:06 UTC]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/films/11
+Completed 302 Found in 71ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/films/11" for ::1 at 2017-03-18 14:32:06 +0100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 265ms (Views: 247.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for ::1 at 2017-03-18 14:32:13 +0100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 248ms (Views: 234.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films?page=2" for ::1 at 2017-03-18 14:32:16 +0100
+Processing by FilmsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 6]]
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 257ms (Views: 241.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films?page=1" for ::1 at 2017-03-18 14:32:18 +0100
+Processing by FilmsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 262ms (Views: 249.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films?page=1" for ::1 at 2017-03-18 14:32:28 +0100
+Processing by FilmsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 278ms (Views: 264.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films?page=2" for ::1 at 2017-03-18 14:32:30 +0100
+Processing by FilmsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 6]]
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 258ms (Views: 241.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films?page=1" for ::1 at 2017-03-18 14:32:32 +0100
+Processing by FilmsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "films"[0m
+  Rendered films/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 245ms (Views: 232.0ms | ActiveRecord: 0.0ms)
+
+

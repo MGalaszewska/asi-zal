@@ -39,7 +39,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 ## Logowanie
 gem 'devise'
-
+## Foto
+gem "paperclip", "~> 5.0.0"
+# paginacja
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 
 group :development do

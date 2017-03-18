@@ -1,7 +1,7 @@
 class FilmsController < ApplicationController
 
   def index
-   @films = Film.all
+   @films = Film.all.order('created_at DESC').page(params[:page]).per_page(6)
  end
 
   def show
@@ -46,6 +46,6 @@ end
 
   private
   def film_params
-    params.require(:film).permit(:title, :director, :year)
+    params.require(:film).permit(:title, :director, :year, :poster)
   end
 end

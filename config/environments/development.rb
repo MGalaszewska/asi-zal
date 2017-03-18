@@ -54,4 +54,7 @@ Rails.application.configure do
 
   #devise
   config.assets.initialize_on_precompile = false
+
+
+
 end
