@@ -7,7 +7,7 @@ Martyna Gałaszewska (zaliczenie)
 |  2.3.3  | 5.0.3 | SQLite (development)|
 |               |               |PostgreSQL (production)|
 
-Aplikacja przechowuje informacje filmach. Zalogowani użytkownicy, oprócz przeglądania, mają możliwość dodawania, edytowania oraz usuwania filmów :movie_camera:.
+Aplikacja przechowuje informacje filmach. Zalogowani użytkownicy, oprócz przeglądania, mają możliwość dodawania, edytowania oraz usuwania filmów. :movie_camera:
 
 Dodatkowe gemy:
 * faker
